@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="entry-plugin" version="1.0.0">
+    <name>entry-plugin</name>
+    <description>Entry Plugin</description>
+    <license>zsw</license>
+    <keywords>zsw,demo</keywords>
+
+    <js-module src="www/EntryPlugin.js" name="EntryPlugin">
+	    <clobbers target="EntryPlugin" />
+	</js-module>
+
+	<platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="EntryPlugin">
+                <param name="ios-package" value="EntryPlugin"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/EntryPlugin.h" />
+        <source-file src="src/ios/EntryPlugin.m" />
+    </platform>
+</plugin>
