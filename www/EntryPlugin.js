@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-entryplugin.EntryPlugin", function(require, exports, module) {
+cordova.define("entry-plugin.EntryPlugin", function(require, exports, module) {
 var exec = require('cordova/exec');
 
 var EntryPlugin = {
