@@ -1,4 +1,3 @@
-cordova.define("entry-plugin.EntryPlugin", function(require, exports, module) {
 var exec = require('cordova/exec');
 
 var EntryPlugin = {
@@ -7,4 +6,3 @@ var EntryPlugin = {
     }
 };
 module.exports = EntryPlugin;
-});
